@@ -22,7 +22,7 @@ public class RunningTestsOnDocker {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("http://localhost:8070/webapp/");
 		String text = driver.findElement(By.xpath("(//h2)[2]")).getText();
-		Assert.assertEquals("Good Luck and we are almost done with the course.Thank you, this is from azur", text);
+		Assert.assertEquals("Good Luck and we are almost done with the course.Thank you, this is from azure", text);
 		driver.close();
 
 	}
